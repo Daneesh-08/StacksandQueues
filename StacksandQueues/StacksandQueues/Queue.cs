@@ -20,6 +20,13 @@ namespace StacksandQueues
                 temp.next = node;
             }
         }
+        public void Dequeue()
+        {
+            if (head == null)
+                Console.WriteLine("Empty Queue !!");
+            else
+                head = head.next;
+        }
         public void Display()
         {
             Node temp = this.head;
